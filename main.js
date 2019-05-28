@@ -2,7 +2,7 @@
 const express = require('express');
 
 //set tunables
-const PORT = 3000;
+const PORT = parseInt(process.argv[2] || process.env.APP_PORT || 3000);
 
 //create app
 const app = express();
